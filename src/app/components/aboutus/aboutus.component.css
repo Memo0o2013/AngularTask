@@ -1,0 +1,37 @@
+h1{
+    color: black;
+}
+p{
+    color: rgb(158, 155, 155);
+}
+
+
+.about-icon{
+    border-radius: 50%;
+    color: #4c80f6 !important;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    margin: 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    border: 2px solid #4c80f6;
+}
+
+@media (max-width: 375px){
+    .about-icon-sm{
+        border-radius: 50%;
+        color: #4c80f6 !important;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        margin: 45px 15px 0 0;
+        text-align: center;
+        text-decoration: none;
+        background: #fff;
+        border: 2px solid #4c80f6;
+    }
+}

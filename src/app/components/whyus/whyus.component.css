@@ -1,0 +1,11 @@
+.why-card{
+    background-color: #1a3674;
+    border: 0;
+    color: white;
+}
+.card a{
+    color: white;
+}
+.card a:hover{
+    color: #4c80f6;
+}

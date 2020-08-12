@@ -1,0 +1,38 @@
+h1{
+    color: black;
+}
+.filter-button{
+    background-color: #ecf5ff;
+    color: #4c80f6;
+    border-radius: 50px;
+    margin: 0 8px;
+}
+.filter-button:hover{
+    color: white;
+    background-color: #4c80f6;
+}
+#portfolio .active{
+    color: white;
+    background-color: #4c80f6;
+}
+.gal{
+    column-count: 3;
+}
+.gal img{
+    width: 100%; 
+    padding: 7px 0;
+    display: inline-block;
+}
+@media (max-width: 768px){
+    .gal{
+        column-count: 1;
+    }
+}
+@media (max-width: 320px){
+    .filter-button-xs{
+        background-color: #ecf5ff;
+        color: #4c80f6;
+        border-radius: 50px;
+        margin: 0 4px 0 0;
+    }
+}

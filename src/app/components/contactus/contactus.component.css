@@ -1,0 +1,37 @@
+h1 {
+    color: black;
+}
+p{
+    color: #617289;
+}
+.form-control{
+    border-radius: 0;
+}
+i{
+    color: #4c80f6;
+}
+
+.form-btn{
+    border-radius: 20px;
+    background-color: #4c80f6;
+    border: 1.5px solid white;
+    color: white;
+    width: 75%;
+    border: 2px solid white;
+}
+.form-btn:hover{
+    background-color: white;
+    color: #4c80f6;
+    border: 2px solid #20438c;
+}
+
+@media (min-width: 992px){
+    .map-lg{
+        height: 315px;
+    }
+}
+@media (min-width: 1200px){
+    .map-xl{
+        height: 290px;
+    }
+}

@@ -1,0 +1,20 @@
+h1 ,p{
+    color: #617289;
+}
+
+
+.client-img{
+    padding: 64px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid #d6eaff;
+     background: #fff;
+     height: 160px;
+     overflow: hidden;
+}
+@media (max-width: 767px){
+    .client-img-sm{
+        padding: 10px;
+    }
+}
