@@ -2,10 +2,16 @@
     background-color: #1a3674;
     border: 0;
     color: white;
+    margin: 0 auto;
 }
 .card a{
     color: white;
 }
 .card a:hover{
     color: #4c80f6;
+}
+@media (min-width: 1200px) {
+    .offset-lg-right-1 {
+      margin-right: 8.33333333%;
+    }
 }

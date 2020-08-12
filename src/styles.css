@@ -34,22 +34,19 @@ a:hover{
 
 /*Navbar*/
 .logo{
-    color: #4c80f6 !important;
-    font-weight: bolder;
+    color: #20438c !important;
 }
 .navbar{
     background-color: #fafbfc;
 }
 .navbar .active,
 .nav-item:hover{
-    color: #fff !important;
-    background-color: #1a3674;
+    color: #4c80f6 !important;
 }
 
 .nav-item{
     margin: 5px 5px 0px 10px ;
-    font-weight: bold;
-    color: #4c80f6 !important;
+    color: #20438c !important;
 }
 
 
@@ -64,7 +61,13 @@ a:hover{
     margin: 0;
 }
 
-
+ footer .nav-item{
+    color: #fff !important;
+}
+footer .nav-item:hover{
+    color: #fff !important;
+    background-color: #1a3674;
+}
 .btn-social
 {
     border-radius: 50%;
