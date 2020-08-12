@@ -47,7 +47,7 @@ a:hover{
 }
 
 .nav-item{
-    margin: 0 5px 5px 10px ;
+    margin: 5px 5px 0px 10px ;
     font-weight: bold;
     color: #4c80f6 !important;
 }
