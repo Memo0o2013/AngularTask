@@ -28,10 +28,7 @@
 .intro h1{
     font-weight: bold;
 }
-.intro h1 span{
-    text-decoration: underline;
-    color: #4c80f6;
-}
+
 
 .intro-btn{
     border-radius: 20px;

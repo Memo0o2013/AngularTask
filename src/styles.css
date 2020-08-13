@@ -27,10 +27,9 @@ a:hover{
 .form-control{
     border-radius: 0;
 }
-.form-control:focus {
-    box-shadow: none;
-    border: 2px solid #20438c;
-}
+
+
+
 
 /*Navbar*/
 .logo{
@@ -49,7 +48,26 @@ a:hover{
     color: #20438c !important;
 }
 
+.lang-btn{
+    margin: 5px 0 0 5px;
+}
+.lang-btn .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
 
+@media (max-width: 992px){
+    .lang-btn{
+        width: 15%;
+    }
+}
+
+
+/*Intro*/
+.span{
+    text-decoration: underline;
+    color: #4c80f6 !important;
+}
 
 /*Footer Section*/
 

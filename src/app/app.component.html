@@ -1,17 +1,24 @@
 <!--NavBar-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
   <div class="container">
-    <a class="navbar-brand logo" href="#">Aphrie Task</a>
+    <a class="navbar-brand logo" href="#">{{'Aphrie Task' | translate}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbar">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="#intro" >Home </a>
-        <a class="nav-item nav-link" href="#about-us" >About Us</a>
-        <a class="nav-item nav-link" href="#portfolio" >Portfolio</a>
-        <a class="nav-item nav-link" href="#team" >Team</a>
-        <a class="nav-item nav-link" href="#contact" >Contact Us</a>
+        <a class="nav-item nav-link active" href="#intro" >{{'Home' | translate}} </a>
+        <a class="nav-item nav-link" href="#about-us" >{{'About Us' | translate}}</a>
+        <a class="nav-item nav-link" href="#portfolio" >{{'Portfolio' | translate}}</a>
+        <a class="nav-item nav-link" href="#team" >{{'Team' | translate}}</a>
+        <a class="nav-item nav-link" href="#contact" >{{'Contact Us' | translate}}</a>
+        <a class="lang-btn">
+            <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+              <option *ngFor="let language of translate.getLangs()" [value]="language" [selected]="language === translate.currentLang">
+                {{ language }}
+              </option>
+            </select>
+        </a>
       </div>
     </div>
   </div>
@@ -22,9 +29,9 @@
   <div class="intro intro-sm">
     <div class="row ">
       <div class="col-6 col-lg-5 offset-lg-1">
-        <h1 class="mt-4">We provide <br><span>solutions</span><br>for your business!</h1>
-        <button class="btn intro-btn ">Get Started</button>
-        <button class="btn intro-btn ml-md-4">Our Services</button>
+        <h1 class="mt-4" [innerHTML]="'Intro' | translate"></h1>
+        <button class="btn intro-btn ">{{'Get Started' | translate}}</button>
+        <button class="btn intro-btn ml-md-4">{{'Our Services' | translate}}</button>
       </div>
       <div class="col-6 mt-5 mt-lg-0">
         <img class="img-fluid" src="../assets/images/intro-img.svg">
@@ -47,22 +54,22 @@
   <div class=" p-5 footer text-left">
     <div class="row">
           <div class="col-md-6 col-lg-3">
-            <h2 class="mb-2 mb-md-4">WELCOME</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+            <h2 class="mb-2 mb-md-4">{{'WELCOME' | translate}}</h2>
+            <p>{{'Lorem-2' | translate}}</p>
           </div>
           <div class="col-md-6 col-lg-3 mt-4 mt-md-0 text-left">
-            <p class="mb-2 mb-md-4"><b>USEFUL LINKS</b></p>
-              <a class="nav-item nav-link" href="#" >Home </a>
-              <a class="nav-item nav-link" href="#" >About Us</a>
-              <a class="nav-item nav-link" href="#" >Services</a>
-              <a class="nav-item nav-link" href="#" >Terms of service</a>
-              <a class="nav-item nav-link" href="#" >Privacy policy</a>
+            <p class="mb-2 mb-md-4"><b>{{'USEFUL LINKS' | translate}}</b></p>
+              <a class="nav-item nav-link" href="#" >{{'Home' | translate}} </a>
+              <a class="nav-item nav-link" href="#" >{{'About Us' | translate}}</a>
+              <a class="nav-item nav-link" href="#" >{{'Services' | translate}}</a>
+              <a class="nav-item nav-link" href="#" >{{'Terms of service' | translate}}</a>
+              <a class="nav-item nav-link" href="#" >{{'Privacy policy' | translate}}</a>
           </div>
           <div class="col-md-6 col-lg-3 mt-4 mt-md-0">
-            <p class="mb-2 mb-md-4"><b>CONTACT US</b></p>
-            <p>A108 Adam Street<br> New York, NY 53522<br> United States</p>
-            <p><b>Phone:</b>+1 5589 55488 55</p>
-            <p><b>Email:</b> info@example.com</p>
+            <p class="mb-2 mb-md-4"><b>{{'Contact Us' | translate}}</b></p>
+            <p [innerHTML]="'Address' | translate"></p>
+            <p><b>{{'Phone' | translate}}:</b> {{'Number' | translate}}</p>
+            <p><b>{{'Email' | translate}}:</b> info@example.com</p>
             <div class="mt-3">
             <a href="#" class="fa fa-twitter btn-social"></a>
             <a href="#" class="fa fa-facebook btn-social"></a>
@@ -72,20 +79,19 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-3 mt-4 mt-lg-0">
-            <p class="mb-2 mb-md-4"><b>OUR NEWSLETTER</b></p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+            <p class="mb-2 mb-md-4"><b>{{'OUR NEWSLETTER' | translate}}</b></p>
+            <p>{{'Lorem-1' | translate}}</p>
             <div class="input-group mt-4">
               <input type="email" class=" form-control form-control-sm w-25">
-              <button class="btn btn-sm newsbtn" type="submit">Subscribe</button>
+              <button class="btn btn-sm newsbtn" type="submit">{{'Subscribe' | translate}}</button>
             </div>
           </div>
       </div>
   </div>
   <div class=" copyright-text text-center p-4">
     <p>
-      &copy; 2020 All Rights Reserved
-      <i class="fa fa-heart hrt"></i> By
-      <a>Memo</a>
+      &copy; {{'Copyright' | translate}}
+      <i class="fa fa-heart hrt"></i>
   </p>
 </div>
 </footer>
